@@ -24,3 +24,7 @@ def get_player_name():
 name = get_player_name()
 print("Hello, " + name + "! Welcome to the game")
 
+
+def update_guessed(guess, guessed):
+    """Updates the guessed letters with the newly guessed letter"""
+    return guessed + guess
