@@ -28,7 +28,7 @@ print("Hello, " + name + "! Welcome to the game")
 def update_guessed(guess, guessed):
     """Updates the guessed letters with the newly guessed letter"""
     return guessed + guess
-    
+
 
 def update_blank(guess, word, blank):
     """
@@ -44,4 +44,16 @@ def update_blank(guess, word, blank):
     else:
         print(f"Sorry, {guess} is not in the word. Please, try again!")
     return blank
+
+
+def update_lives(guess, word, lives):
+    """
+    Decreases the number of lives if the guessed
+    letter is not present in the word.
+    Returns the updated number of lives.
+    """
+    if guess not in word:
+        lives -= 1
+        print(f"You have {lives} lives left.")
+    return lives
 
