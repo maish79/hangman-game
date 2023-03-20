@@ -56,4 +56,51 @@ def update_lives(guess, word, lives):
         lives -= 1
         print(f"You have {lives} lives left.")
     return lives
+    
 
+def play_hangman():
+    """Plays a game of hangman"""
+    hangman = ['''
+ +---+
+ |   |
+ O   |
+/|\\ |
+/ \\ |
+     |
+=======''', '''
+ +---+
+ |   |
+ O   |
+/|\\ |
+  \\ |
+     |
+=======''', '''
+ +---+
+ |   |
+ O   |
+/|\\ |
+     |
+     |
+=======''', '''
++---+
+ |   |
+ O   |
+/|   |
+     |
+     |
+=======''', '''
++---+
+ |   |
+ O   |
+ |   |
+     |
+     |
+=======''', '''
++---+
+ |   |
+ O   |
+     |
+     |
+     |
+     |
+=======''']
