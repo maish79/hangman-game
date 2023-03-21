@@ -128,4 +128,10 @@ def play_hangman():
         if "_" not in blank:
             print("Congratulations, you win!")
             end_of_game = True
+
+        if lives == 0:
+            print("You lose!")
+            print("The word was " + word)
+            end_of_game = True
+
    
