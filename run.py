@@ -124,4 +124,8 @@ def play_hangman():
 
         print(blank)
         print(hangman[lives])
+
+        if "_" not in blank:
+            print("Congratulations, you win!")
+            end_of_game = True
    
