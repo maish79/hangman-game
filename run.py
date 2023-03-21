@@ -1,5 +1,5 @@
 """
-importing modules for hangman game
+import modules for hangman game
 
 """
 
@@ -23,6 +23,26 @@ def get_player_name():
 
 name = get_player_name()
 print("Hello, " + name + "! Welcome to the game")
+
+
+def get_guess(guessed_letters, all_letters):
+    """
+    Prompts the player to enter a lettter and validate the input.
+    returns the guessed letter if it is a valid
+    single letter not previously guessed..
+
+    """
+    while True:
+        guess = input("guess a letter:\n").lower()
+
+        if len(guess) != 1:
+            print("please pick a single letter.")
+        elif guess not in all_letters:
+            print("please make sure to enter a letter.")
+        elif guess in guessed_letters:
+            print(f'you already guessed the letter {guess}, please try again.')
+        else:
+            return guess
 
 
 def update_guessed(guess, guessed):
@@ -105,12 +125,12 @@ def play_hangman():
      |
 =======''']
 
-
     alphabet = set("abcdefghijklmnopqrstuvwxyz")
     lives = 6
     guessed = ""
     end_of_game = False
     word = random.choice(hangman_letters.word_list)
+
     display_logo()
     print("You have 6 attempts to guess the word!")
 
@@ -133,8 +153,10 @@ def play_hangman():
             print("You lose!")
             print("The word was " + word)
             end_of_game = True
-  
+
     play_again_input = input("Do you want to play again? (y/n)").lower()
     if play_again_input == "y":
         play_hangman()
 
+
+play_hangman()
