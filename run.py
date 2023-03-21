@@ -133,5 +133,8 @@ def play_hangman():
             print("You lose!")
             print("The word was " + word)
             end_of_game = True
+  
+    play_again_input = input("Do you want to play again? (y/n)").lower()
+    if play_again_input == "y":
+        play_hangman()
 
-   
