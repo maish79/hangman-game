@@ -108,4 +108,11 @@ def play_hangman():
 
     alphabet = set("abcdefghijklmnopqrstuvwxyz")
     lives = 6
+    guessed = ""
+    end_of_game = False
+    word = random.choice(hangman_letters.word_list)
+    display_logo()
+    print("You have 6 attempts to guess the word!")
+
+    blank = ["_"] * len(word)
    
