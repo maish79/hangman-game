@@ -16,7 +16,7 @@ def thanks_for_playing():
 
 def display_logo():
     """ Displays the hangman logo """
-    logo = pyfiglet.figlet_format("welcome to\n Hangman",
+    logo = pyfiglet.figlet_format("Welcome to\n Hangman",
                                   font="standard", justify="center")
     print(logo)
 
@@ -39,14 +39,14 @@ def get_guess(guessed_letters, all_letters):
 
     """
     while True:
-        guess = input("guess a letter:\n").lower()
+        guess = input("Guess a letter:\n").lower()
 
         if len(guess) != 1:
-            print("please pick a single letter.")
+            print("Please pick a single letter.")
         elif guess not in all_letters:
-            print("please make sure to enter a letter.")
+            print("Please make sure to enter a letter.")
         elif guess in guessed_letters:
-            print(f'you already guessed the letter {guess}, please try again.')
+            print(f'You already guessed the letter {guess}, please try again.')
         else:
             return guess
 
