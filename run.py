@@ -9,7 +9,8 @@ import hangman_letters
 
 
 def thanks_for_playing():
-    """ Thanks player after playing the game and indicating that the game is over"""
+    """ Thanks player after playing the game and indicating
+        that the game is over"""
     print("Thank you for playing Hangman! See you next time.")
 
 
@@ -22,7 +23,7 @@ def display_logo():
 
 def get_player_name():
     """Prompts the player to enter their name and returns the name"""
-    player_name = input("Please enter your name:\n ")
+    player_name = input("Please enter your name: ")
     return player_name
 
 
