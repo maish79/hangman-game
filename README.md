@@ -1,31 +1,18 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# __Hangman - Portfolio Project 3__
 
-Welcome maish79,
+![Hangman Game](/documentation/testing/mockup.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## How to play
 
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+* This is a Python terminal game and is deployed on Heroku using Code Institutes mock terminal template.
+* Before starting the game the user is asked to enter their name and then gets a welcoming message before the game beginns.
+* The user is then informed that they have 6 sttemps to guess a correct word before the game ends.
+* If the user gets a correct letter their lives do not decrease but if the user types in a wrong letter their lives decreasee by one.
+* The game will display a series of underscores, each representing a letter of the word to be guessed.
+* Enter a letter to guess. If the letter is present in the word, the game will reveal its position(s) in the word.
+* If the letter is not present in the word, the game will draw a body part of the hangman sketch.
+* Continue guessing until either the word is correctly guessed or the stick figure is complete.
+* if all letters are guesssed correctly the complete hangman sketch is not drawn and the user wins.
+* the user looses by getting all 6 guesses wrong and thus the hangman sketch is drawn.
+* when the game is over the user is prompted if they want to start a new game by choosing (y/n).
+* If user chooses 'y' the game restarts and if user chooser 'n' the game ends with the message 'Thanks for playing hangman, see you next time'.

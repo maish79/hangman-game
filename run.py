@@ -11,7 +11,7 @@ import hangman_letters
 def thanks_for_playing():
     """ Thanks player after playing the game and indicating
         that the game is over"""
-    print("Thank you for playing Hangman! See you next time.")
+    print("Thanks for playing Hangman! See you next time.")
 
 
 def display_logo():
