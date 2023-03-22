@@ -8,6 +8,11 @@ import pyfiglet
 import hangman_letters
 
 
+def thanks_for_playing():
+    """ Thanks player after playing the game and indicating that the game is over"""
+    print("Thank you for playing Hangman! See you next time.")
+
+
 def display_logo():
     """ Displays the hangman logo """
     logo = pyfiglet.figlet_format("welcome to\n Hangman",
@@ -60,7 +65,7 @@ def update_blank(guess, word, blank):
         for i, letter in enumerate(word):
             if letter == guess:
                 blank[i] = guess
-        print("Congrats you found a match")
+        print("Congradulations you found a match")
     else:
         print(f"Sorry, {guess} is not in the word. Please, try again!")
     return blank
@@ -160,3 +165,5 @@ def play_hangman():
 
 
 play_hangman()
+
+thanks_for_playing()
