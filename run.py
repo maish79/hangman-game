@@ -23,7 +23,7 @@ def display_logo():
 
 def get_player_name():
     """Prompts the player to enter their name and returns the name"""
-    player_name = input("Please enter your name: ")
+    player_name = input("Please enter your name:\n")
     return player_name
 
 
@@ -163,8 +163,8 @@ def play_hangman():
     play_again_input = input("Do you want to play again? (y/n)\n").lower()
     if play_again_input == "y":
         play_hangman()
+    else:
+        thanks_for_playing()
 
 
 play_hangman()
-
-thanks_for_playing()
