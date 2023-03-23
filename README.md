@@ -29,4 +29,7 @@ The deployed live game can be found at [Hangman Game](https://hang-men.herokuapp
 - As a player, I want to know how many letters are in the word so that I can make an informed guess.
 - As a player, I want to be able to restart the game after the game has finished without exiting the program to do so.
 
+### __Flowchart__
+I made a flowchart so that it can help me with planning and visualizing the structure of the game.
 
+![Flowchart](documentation/flowchart/hangman-flowchart.png)
