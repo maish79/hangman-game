@@ -16,3 +16,17 @@
 * the user looses by getting all 6 guesses wrong and thus the hangman sketch is drawn.
 * when the game is over the user is prompted if they want to start a new game by choosing (y/n).
 * If user chooses 'y' the game restarts and if user chooser 'n' the game ends with the message 'Thanks for playing hangman, see you next time'.
+
+The deployed live game can be found at [Hangman Game](https://hang-men.herokuapp.com/)
+
+### __User stories__
+
+- As a player, I want to see a visual representation of the hangman so that I can keep track of my progress and know how many incorrect guesses I have left.
+- As a player, I want to be able to see how many letters I need to guess.
+- As a player, I want to be able to enter a letter guess so that I can try to guess the word.
+- As a player, I want to see which letters I have already guessed so that I don't repeat the same letter.
+- As a player, I want to receive feedback after each guess so that I know whether my guess was correct or not.
+- As a player, I want to know how many letters are in the word so that I can make an informed guess.
+- As a player, I want to be able to restart the game after the game has finished without exiting the program to do so.
+
+
