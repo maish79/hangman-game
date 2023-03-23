@@ -33,3 +33,12 @@ The deployed live game can be found at [Hangman Game](https://hang-men.herokuapp
 I made a flowchart so that it can help me with planning and visualizing the structure of the game.
 
 ![Flowchart](documentation/flowchart/hangman-flowchart.png)
+
+
+## __Features__
+
+- __Welcome Screen__
+    - The player is welcomed to the game and prompted to input their name.
+
+![Welcome Screen](documentation/testing/mockup.png)
+
