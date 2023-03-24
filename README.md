@@ -74,9 +74,24 @@ The following is a list of the technologies I used on this project.
 
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) was used for the coding of the game.
 - [PyFiglet](https://pypi.org/project/pyfiglet/0.7/) was used to print large text seen on the welcome message when the program starts.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) The script used to run the Code Institute mock terminal is done with JavaScript.
+- [Techsini](http://techsini.com/multi-mockup/index.php) was used to generate mockups for the project.
 - [Github](https://github.com/) was used to store the project's code after being pushed from Git.
 - [Gitpod](https://gitpod.io/) terminal was used to commit my code using Git and push it to Github.
 - [Git](https://git-scm.com/) was used for version control through the Gitpod terminal.
 - Custom module: hangman_letters containing a list of words to be used in the game.
 
 ## __Testing and Validation__
+I validated my run.py and hangman_letters.py using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) and no errors were found.
+
+- run.py validation
+
+![run.py](assets/images/run.py-validation.png)
+
+
+-hangman-letters validation
+
+![hangman-letters](assets/images/hangman-letters.png)
+
+
+
