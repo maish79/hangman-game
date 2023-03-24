@@ -1,6 +1,6 @@
 # __Hangman - Portfolio Project 3__
 
-![Hangman Game](/documentation/testing/mockup.png)
+![Hangman Game](/assets/images/welcome.png)
 
 ## How to play
 
@@ -32,7 +32,7 @@ The deployed live game can be found at [Hangman Game](https://hang-men.herokuapp
 ### __Flowchart__
 I made a flowchart so that it can help me with planning and visualizing the structure of the game.
 
-![Flowchart](documentation/flowchart/hangman-flowchart.png)
+![Flowchart](assets/flowchart/hangman-flowchart.png)
 
 
 ## __Features__
@@ -40,5 +40,34 @@ I made a flowchart so that it can help me with planning and visualizing the stru
 - __Welcome Screen__
     - The player is welcomed to the game and prompted to input their name.
 
-![Welcome Screen](documentation/testing/mockup.png)
+![Welcome Screen](assets/images/welcome.png)
+
+- __Main Game__
+    - This is the main feature of the program. The user is met with a graphic displaying the hangman.
+    - The player is promtped with underscores ( _ ) to let them know how many letters are in the word.
+    - The player can enter letters until they either get the word correct or run out of lives.
+    - if the player gets the correct letter the letter is added to the underscore.
+
+![Right Guess](assets/images/right-guess.png)
+
+- If the player gets the wrong guess their lives number deprciates by 1 and the hangman sketch starts being drawn step by step
+
+![Wrong Guess](assets/images/wrong-guess.png)
+
+- If a user enters a letter that they have guessed previously, they will be reminded of this and prompted to try again without losing a life.
+
+![Already Guessed](assets/images/already-guessed.png)
+
+- If a user guessed double letters, they will get the alert 'please pick a single letter' 
+- If a user guessed an integer, they will get the alert 'please enter a letter'
+
+![Single letter](assets/images/single-letter.png)
+
+- Once the game is over and the user has either won or lost, they will be asked if they want to play again.If they choose 'y' the game starts again if they choose another letter the game ends with the message 'see you next time'
+
+![game-over](assets/images/game-over.png)
+s
+![you lose](assets/images/you-lose.png)
+
+
 
