@@ -103,5 +103,22 @@ ID | Player stories | Requirement met |
 | 5 | As a player, I want to receive feedback after each guess so that I know whether my guess was correct or not.| Yes |
 | 6 | As a player, I want to be able to play again after the game has finished without exiting the program. | Yes |
 
+## Program Validation Testing
+Section Tested | Input To Validate | Expected Outcome | Pass/Fail
+| - | --------- | --------------- | - | 
+| Start Program	| N/A |	Load welcome message and prompt user to enter name |	PASS
+| Enter Name	| Input "maina" |	Move on to the game + presents "Hallo, {username} welcome to the game!" | PASS
+| Guess a letter |	Input a number	| Error message warning to enter a single letter. | PASS
+| Guess a letter |	Input two letters	| Error message warning to enter a single letter. | PASS
+| Guess a letter |	Press enter with no input	| Error message warning to enter a single letter. | PASS
+| Guess a letter |	Correct letter	| Display the letter in the correct space of the dashed word | PASS
+| Guess a letter |	Correct letter	| Display the letter in the "Guessed letters" list | PASS
+| Guess a letter |	Correct letter	| Doesn't subtract 1 from "Attempts remaining" | PASS
+| Guess a letter |	Incorrect letter	| Subtract 1 from "Attempts remaining" | PASS
+| Guess a letter |	Incorrect letter | Display the letter in the "Guessed letters" list | PASS
+| Guess a letter |	Letter already guessed	| Error message: "letter" was already guessed. Try another letter.| PASS
+| Play Again after make a point | "Y" | Start a new game manteining the score | Pass
+| Play Again | Input anything other than "Y" | Exit the program | Pass
+
 
 
