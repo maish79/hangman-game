@@ -117,7 +117,7 @@ Section Tested | Input To Validate | Expected Outcome | Pass/Fail
 | Guess a letter |	Incorrect letter	| Subtract 1 from "Attempts remaining" | PASS
 | Guess a letter |	Incorrect letter | Display the letter in the "Guessed letters" list | PASS
 | Guess a letter |	Letter already guessed	| Error message: "letter was already guessed." Try another letter!| PASS
-| Play Again after make a point | "y" | Start a new game manteining the score | Pass
+| Play Again after game ends | "y" | Start a new game manteining the score | Pass
 | Play Again | Input anything other than "y" | Exit the program | Pass
 
 ## Browser Testing
@@ -192,6 +192,20 @@ For Heroku deployment, follow these steps to connect your GitHub repository to t
 - Set the remote for Heroku: heroku git:remote -a <app_name> (replace app_name with your app, without the angle-brackets)
 - After performing the standard Git add, commit, and push to GitHub, you can now type: git push heroku main
 - The frontend terminal should now be connected and deployed to Heroku.
+
+## Forking repository
+1. Go to the GitHub repository
+2. Click on the Fork button in the upper right-hand corner
+
+## Cloning repository
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone
+
 
 ## Credits 
 - ReadMe inspiration from Adamgiroly and kathrin.
