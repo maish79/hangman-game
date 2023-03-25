@@ -89,9 +89,19 @@ I validated my run.py and hangman_letters.py using [Code Institute's Python Lint
 ![run.py](assets/images/run.py-validation.png)
 
 
--hangman-letters validation
+- hangman-letters validation
 
 ![hangman-letters](assets/images/hangman-letters.png)
+
+## User Stories Testing
+ID | Player stories | Requirement met |
+| - | --------- | --------------- |
+| 1 | As a player, I want to be able to input my name. | Yes | 
+| 2 | As a player, I want to be able to see how many attempts I have to guess the word. | Yes | 
+| 3 | As a player, I want to be able to see all the letters I guessed. | Yes |
+| 4 | As a player, I want to be warned if I try to guess a letter I've already guessed. | Yes |
+| 5 | As a player, I want to receive feedback after each guess so that I know whether my guess was correct or not.| Yes |
+| 6 | As a player, I want to be able to play again after the game has finished without exiting the program. | Yes |
 
 
 
