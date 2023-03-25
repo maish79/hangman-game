@@ -144,6 +144,9 @@ Ensuring all parts of the programm function as expected in all major browsers.
 * Error trailing white space
 * No new line at end of file
 
+## Unfixed Bugs
+- No unfixed bugs to date.
+
 ## Deployment
 
 ### Local Deployment
@@ -190,3 +193,7 @@ For Heroku deployment, follow these steps to connect your GitHub repository to t
 - After performing the standard Git add, commit, and push to GitHub, you can now type: git push heroku main
 - The frontend terminal should now be connected and deployed to Heroku.
 
+## Credits 
+- ReadMe inspiration from Adamgiroly and kathrin.
+- Flowchart made using draw.io
+- python inspiration from Priyam
