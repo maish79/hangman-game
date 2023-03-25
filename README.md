@@ -131,6 +131,10 @@ Ensuring all parts of the programm function as expected in all major browsers.
 | Firefox     | ✔          | ✔             |
 | Safari      | ✔          | ✔             |
 
+- Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
+
+    ![lighthouse](assets/images/lighthouse.png)
+
 
 ## Bugs
 * A missing-module-docstring error indicated that the module imports at the start of the game required an additional docstring.
