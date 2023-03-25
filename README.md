@@ -138,4 +138,55 @@ Ensuring all parts of the programm function as expected in all major browsers.
 
 ## Bugs
 * A missing-module-docstring error indicated that the module imports at the start of the game required an additional docstring.
+* Flake8 error line is too long(81 > 79 characters)
+* Flake8 error missing white space after ','
+* Invalid escape sequence '\'
+* Error trailing white space
+* No new line at end of file
+
+## Deployment
+
+### Local Deployment
+This project was developed using the [Gitpod IDE](https://gitpod.io/), committed to git and pushed to [GitHub](https://github.com).
+
+If you are using another IDE, you can make a local copy of this repository by typing the following command in your terminal:
+- `git clone https://github.com/maish79/hangman-game.git`
+
+### How to run this project locally using Gitpod
+To clone this project into Gitpod you will need:
+
+1. Create a Github account at https://github.com/
+2. Use the Chrome browser
+
+Then follow these steps:
+1. Install the [Gitpod Browser Extentions for Chrome](https://www.gitpod.io/docs/browser-extension/)
+2. After installation, restart the browser
+3. Log into [Gitpod](https://gitpod.com/) with your gitpod account.
+4. Navigate to the Project GitHub repository
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+
+### Heroku Deployment
+This project uses Heroku, a platform as a service (PaaS) that enables developers to build, run, and operate backend applications on cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select 'create new app" in the Heroku Dashboard.
+- Your app name must be unique. Choose a region closest to you (EU or USA) and select Create App.
+- In the Settings section, click 'Reveal Config Vars', set the value of KEY to PORT, set the value to 8000 and select add.
+- Further down, to support dependencies, select Add Buildpack.
+- The order of the buildpacks is important, select `Python` first, then `Node.js` second. (if they are not in this order, you can drag them to rearrange them)
+
+Heroku needs an additional file in order to deploy properly.
+
+- `requirements.txt`
+    - You can find the requirements your file needs using the following command: 
+    `pip3 freeze --local > requirements.txt`
+
+For Heroku deployment, follow these steps to connect your GitHub repository to the newly created app:
+
+- In the Terminal/CLI, connect to Heroku using this command: heroku login -i
+- Set the remote for Heroku: heroku git:remote -a <app_name> (replace app_name with your app, without the angle-brackets)
+- After performing the standard Git add, commit, and push to GitHub, you can now type: git push heroku main
+- The frontend terminal should now be connected and deployed to Heroku.
 
