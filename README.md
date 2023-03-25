@@ -4,18 +4,18 @@
 
 ## How to play
 
-* This is a Python terminal game and is deployed on Heroku using Code Institutes mock terminal template.
-* Before starting the game the user is asked to enter their name and then gets a welcoming message before the game beginns.
-* The user is then informed that they have 6 sttemps to guess a correct word before the game ends.
-* If the user gets a correct letter their lives do not decrease but if the user types in a wrong letter their lives decrease by one.
-* The game will display a series of underscores, each representing a letter of the word to be guessed.
-* Enter a letter to guess. If the letter is present in the word, the game will reveal its position in the word.
-* If the letter is not present in the word, the game will draw a body part of the hangman sketch.
-* Continue guessing until either the word is correctly guessed or the stick figure is complete.
-* If all letters are guesssed correctly the complete hangman sketch is not drawn and the user wins.
-* The user looses by getting all 6 guesses wrong and thus the hangman sketch is drawn.
-* When the game is over the user is prompted if they want to start a new game by choosing (y/n).
-* If user chooses 'y' the game restarts and if user chooser 'n' the game ends with the message 'Thanks for playing hangman, see you next time'.
+1. This is a Python terminal game and is deployed on Heroku using Code Institutes mock terminal template.
+2. Before starting the game the user is asked to enter their name and then gets a welcoming message before the game beginns.
+3. The user is then informed that they have 6 attempts to guess a correct word before the game ends.
+4. If the user gets a correct letter their lives do not decrease but if the user types in a wrong letter their lives decrease by one.
+5. The game will display a series of underscores, each representing a letter of the word to be guessed.
+6. Enter a letter to guess. If the letter is present in the word, the game will reveal its position in the word.
+7. If the letter is not present in the word, the game will draw a body part of the hangman sketch.
+8. Continue guessing until either the word is correctly guessed or the stick figure is complete.
+9. If all letters are guesssed correctly the complete hangman sketch is not drawn and the user wins.
+10. The user looses by getting all 6 guesses wrong and thus the hangman sketch is drawn.
+11. When the game is over the user is prompted if they want to start a new game by choosing (y/n).
+12. If user chooses 'y' the game restarts and if user chooser 'n' the game ends with the message 'Thanks for playing hangman, see you next time'.
 
 The deployed live game can be found at [Hangman Game](https://hang-men.herokuapp.com/)
 
@@ -116,9 +116,9 @@ Section Tested | Input To Validate | Expected Outcome | Pass/Fail
 | Guess a letter |	Correct letter	| Doesn't subtract 1 from "Attempts remaining" | PASS
 | Guess a letter |	Incorrect letter	| Subtract 1 from "Attempts remaining" | PASS
 | Guess a letter |	Incorrect letter | Display the letter in the "Guessed letters" list | PASS
-| Guess a letter |	Letter already guessed	| Error message: "letter" was already guessed. Try another letter.| PASS
-| Play Again after make a point | "Y" | Start a new game manteining the score | Pass
-| Play Again | Input anything other than "Y" | Exit the program | Pass
+| Guess a letter |	Letter already guessed	| Error message: "letter was already guessed." Try another letter!| PASS
+| Play Again after make a point | "y" | Start a new game manteining the score | Pass
+| Play Again | Input anything other than "y" | Exit the program | Pass
 
 ## Browser Testing
 
@@ -136,7 +136,7 @@ Ensuring all parts of the programm function as expected in all major browsers.
     ![lighthouse](assets/images/lighthouse.png)
 
 
-## Bugs
+## Fixed Bugs
 * A missing-module-docstring error indicated that the module imports at the start of the game required an additional docstring.
 * Flake8 error line is too long(81 > 79 characters)
 * Flake8 error missing white space after ','
