@@ -120,5 +120,18 @@ Section Tested | Input To Validate | Expected Outcome | Pass/Fail
 | Play Again after make a point | "Y" | Start a new game manteining the score | Pass
 | Play Again | Input anything other than "Y" | Exit the program | Pass
 
+## Browser Testing
 
+Ensuring all parts of the programm function as expected in all major browsers.
+
+| Browser     | Layout      | Functionality |
+| :---------: | :----------:| :-----------: |
+| Chrome      | ✔          | ✔             |
+| Edge        | ✔          | ✔             |
+| Firefox     | ✔          | ✔             |
+| Safari      | ✔          | ✔             |
+
+
+## Bugs
+* A missing-module-docstring error indicated that the module imports at the start of the game required an additional docstring.
 
