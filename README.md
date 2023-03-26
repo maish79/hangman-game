@@ -5,7 +5,7 @@
 ## How to play
 
 1. This is a Python terminal game and is deployed on Heroku using Code Institutes mock terminal template.
-2. Before starting the game the user is asked to enter their name and then gets a welcoming message before the game beginns.
+2. Before starting the game the user is asked to enter their name and then gets a welcoming message before the game begins.
 3. The user is then informed that they have 6 attempts to guess a correct word before the game ends.
 4. If the user gets a correct letter their lives do not decrease but if the user types in a wrong letter their lives decrease by one.
 5. The game will display a series of underscores, each representing a letter of the word to be guessed.
@@ -46,7 +46,7 @@ I made a flowchart so that it can help me with planning and visualizing the stru
     - This is the main feature of the program. The user is met with a graphic displaying the hangman.
     - The player is promtped with underscores ( _ ) to let them know how many letters are in the word.
     - The player can enter letters until they either get the word correct or run out of lives.
-    - if the player gets the correct letter the letter is added to the underscore.
+    - If the player gets the correct letter the letter is added to the underscore.
 
 ![Right Guess](assets/images/right-guess.png)
 
