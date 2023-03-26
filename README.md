@@ -212,5 +212,6 @@ For Heroku deployment, follow these steps to connect your GitHub repository to t
 
 ## Credits 
 - ReadMe inspiration from Adamgiroly and kathrin.
-- Flowchart made using draw.io
-- Python code inspiration from Priyam
+- Flowchart made using draw.io.
+- Python code inspiration from Priyam.
+- Code Institute for the deployment terminal.
