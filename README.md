@@ -137,12 +137,15 @@ Ensuring all parts of the programm function as expected in all major browsers.
 
 
 ## Fixed Bugs
-* A missing-module-docstring error indicated that the module imports at the start of the game required an additional docstring.
-* Flake8 error line is too long(81 > 79 characters)
-* Flake8 error missing white space after ','
-* Invalid escape sequence '\'
-* Error trailing white space
-* No new line at end of file
+
+| Issue number    | Description     | Implemented Solution  |
+| ------------- |:-------------:| -----:|
+| 1 | Flake8 error line is too long(81 > 79 characters) | Divided the line after 50 letters on to the next paragraph |
+| 2 | A missing-module-docstring error | Added a docstring for the module imports at the beggining of the game.|
+| 3 | Flake8 error missing white space after ',' | Put a space after the comma.|
+| 4 | Flake8 error Invalid escape sequence '\' | Escaped the backlash by adding another backlash before it . |
+| 5 | Flake8 error trailing white space | Removed tabs and spaces that appeared at the end of the text. |
+
 
 ## Unfixed Bugs
 - No unfixed bugs to date.
@@ -210,4 +213,4 @@ For Heroku deployment, follow these steps to connect your GitHub repository to t
 ## Credits 
 - ReadMe inspiration from Adamgiroly and kathrin.
 - Flowchart made using draw.io
-- python inspiration from Priyam
+- Python code inspiration from Priyam
